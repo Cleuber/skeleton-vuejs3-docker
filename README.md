@@ -1,9 +1,12 @@
 # Skeleton VueJS3 + Docker + Node 16
 
-## Project setup
+## Project Run
 ```
-yarn install
+docker-compose up 
 ```
+
+
+## yarn command 
 
 ### Compiles and hot-reloads for development
 ```
