@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+
+  viewingo-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: skeleton-vuejs
+    command: sh -c "/usr/local/bin/yarn install && /usr/local/bin/yarn dev"
+    environment:
+      NODE_ENV: development
+      PORT: 8080
+      LOG_LEVEL: "DEBUG"
+    ports:
+      - 8080:8080
+    volumes:
+     - .:/home/app
